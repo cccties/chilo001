@@ -182,11 +182,17 @@ div.width30 {
 }
 
 /* Ver. 2のセクションのスタイル*/
-.subject {
+.subject_chapter {
+	height: 3em;
 }
 
-/* Ver. 2のページのスタイル*/
-.subsubject {
+.subject_section {
+	height: 2em;
+}
+
+/* Ver. 2のページのスタイル（内カバー用）*/
+.subject_cover {
+	height: 4em;
 }
 
 /* Ver. 2 セクション・ページを囲むスタイル*/

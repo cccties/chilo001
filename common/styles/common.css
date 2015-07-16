@@ -65,7 +65,8 @@ img{
 	width: 30%;
 }
 .skip {
-	float: right;
+	margin-top: 1em;
+	margin-left: auto;
  	width: 25%;
 }
 

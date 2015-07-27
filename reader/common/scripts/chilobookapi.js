@@ -7,23 +7,40 @@
  * chiloAPI = "showTestResults"	テスト採点
  **********************************************************************************************/
  
-var localhostApiDomain = "http://localhost:8080/";
+//var localhostApiDomain = "http://localhost:8080/";
 
-function chiloWebFunc(url){
-	/**********************************************************************************************
-	 * CHiLO API パラメータ chiloWeb urlStrにurlを設定
-	 **********************************************************************************************/
+/**********************************************************************************************
+ * CHiLO API パラメータ chiloWeb urlStrにurlを設定
+ **********************************************************************************************/
+var chiloData;
+function chiloWebFunc(url,title){
+	//alert(url)
+	top.chiloStep1(url,title);
+/*
 	var localhostApiDomain = "http://localhost:8080/";
 	var chiloAPI = "chiloWeb";
 	var chiloData = {
 		urlStr: url
 	};
 	callTestLogAPI(localhostApiDomain,chiloAPI,chiloData);
+	
+	chiloData = {
+		urlStr: url
+	};
+	chiloApiCallback("chiloWebFunc2");
+*/
 }
+function chiloWebFunc2(port){
+	var localhostApiDomain = "http://localhost:"+ port + "/";
+	var chiloAPI = "chiloWeb";
+	callCHiLOhref(localhostApiDomain,chiloAPI,chiloData);
+}
+
 /**********************************************************************************************
  * CHiLOBook API Jquery ajax使用
  **********************************************************************************************/
-function callCHiLOjsonp(chiloAPI, chiloData) {
+function callCHiLOjsonp(localhostApiDomain,chiloAPI,chiloData) {
+	//alert("callCHiLOjsonp url: "+ localhostApiDomain + chiloAPI);
 	$.ajax({
               url:localhostApiDomain + chiloAPI,
               type:'GET',
@@ -33,6 +50,7 @@ function callCHiLOjsonp(chiloAPI, chiloData) {
               timeout:10000
             });
 }//end testLog
+
 /**********************************************************************************************
  * CHiLOBook API jsonp callback 使用
  **********************************************************************************************/
@@ -43,28 +61,27 @@ function callbackChange(msg){
 /**********************************************************************************************
  * CHiLOBook API location href 使用
  **********************************************************************************************/
-function callCHiLOhref(chiloAPI, chiloData) {
+function callCHiLOhref(localhostApiDomain,chiloAPI,chiloData) {
+	//alert("callCHiLOhref url: "+ localhostApiDomain + chiloAPI);
 	var urlPath = localhostApiDomain + chiloAPI + "?" + JSON.stringify(chiloData);
 	window.location.href = urlPath;
 }//end callCHiLO
-/**********************************************************************************************
- * changeView API Jquery ajax使用
- **********************************************************************************************/
-function callTestLogAPI(localhostApiDomain,chiloAPI,chiloData) {
-	jQuery.ajax({
-              url:localhostApiDomain + chiloAPI,
-              type:'GET',
-              data:JSON.stringify(chiloData),
-              dataType: 'jsonp',
-              jsonp : "callbackChange",
-              timeout:10000
-            });
-}//end testLog
 
-/**********************************************************************************************
- * changeView API location href 使用
+ /**********************************************************************************************
+ * CHiLOBook API localhostApiPort 変更 Called by CHILO Reader
+	getChiloApiPort : 	現在のPort番号を取得, 
+				CHIRO ReaderからsetChiloApiPortがコールバックされportに値が渡されます
+	chiloApiCallback(apifunc) : getChiloApiPortのコールバック関数をapifuncに指定できます。
+					apifuncで指定した関数がコールバックされportに値が渡されます
  **********************************************************************************************/
-function callTestLogAPI2(localhostApiDomain,chiloAPI,chiloData) {
-	var urlPath = localhostApiDomain + chiloAPI + "?" + JSON.stringify(chiloData);
-	window.location.href = urlPath;
-}//end testLog
+function setChiloApiPort(port) {
+	chiloApiPort = port;
+	alert("chiloApiPort: "+ port);
+}//end callCHiLO
+function getChiloApiPort() {
+	window.location.href = "http://localhost/" + "getChiloApiPort";
+}//end callCHiLO
+
+function chiloApiCallback(apifunc){
+	window.location.href = "http://localhost/" + "chiloApiCallback/"+apifunc;
+}

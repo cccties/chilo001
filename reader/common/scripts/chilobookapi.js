@@ -19,8 +19,8 @@ function chiloreadercheckFunc(main,sub,w){
 	    appcheck = 1;
 	    //cookieを保存する(naka)
 	    var cookiedate = new Date();
-		//cookiedate.setTime( cookiedate.getTime() + ( 3600 * 1000 * 24)); //有効期限1日
-		cookiedate.setTime( cookiedate.getTime() + ( 60 * 1000)); //有効期限60秒
+		cookiedate.setTime( cookiedate.getTime() + ( 3600 * 1000 * 24)); //有効期限1日
+		//cookiedate.setTime( cookiedate.getTime() + ( 60 * 1000)); //有効期限60秒
 	    jQuery.cookie('appchk', '1', { expires: cookiedate, path: '/' }); //有効範囲はドメイン全体
 	}else{
     	//alert('no cookie');

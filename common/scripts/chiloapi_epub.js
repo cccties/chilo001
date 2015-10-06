@@ -15,7 +15,13 @@
 var chiloData;
 function chiloWebFunc(url,title){
 	//alert(url)
-	top.chiloStep1(url,title);
+	
+	try{
+	 top.chiloStep1(url,title);
+	} catch (e) {
+	 window.open(url);
+	}
+
 /*
 	var localhostApiDomain = "http://localhost:8080/";
 	var chiloAPI = "chiloWeb";

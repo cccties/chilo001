@@ -748,7 +748,7 @@ h4 {
 
 .video {
 	text-align: center;
-	margin: 1em auto 2em auto;
+	margin: auto;
 }
 
 .link_icon{
@@ -775,7 +775,7 @@ h4 {
 }
 
 .subject_section {
-	height: 2em;
+/*	height: 2em; */
 }
 
 /* Ver. 2のページのスタイル（内カバー用）*/

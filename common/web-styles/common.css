@@ -44,6 +44,7 @@ div.p{
 	padding-top: 0.3000em;
 	padding-bottom: 0.3000em;
 	margin: 0.0000em;
+	word-wrap: breeak-word;
 }
 
 a{text-decoration:none;}
@@ -788,3 +789,4 @@ h4 {
 	width: 70%;
 	float: left;
 }
+

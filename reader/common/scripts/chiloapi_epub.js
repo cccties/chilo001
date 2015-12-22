@@ -14,13 +14,14 @@
  **********************************************************************************************/
 var chiloData;
 function chiloWebFunc(url,title){
-	//alert(url)
+//	alert(url);
 	
-	try{
-	 top.chiloStep1(url,title);
-	} catch (e) {
-	 window.open(url);
-	}
+try{
+	top.chiloStep1(url,title);
+} catch (e) {
+	/* window.open(url); */
+	window.open(url,'_parent');
+}
 
 /*
 	var localhostApiDomain = "http://localhost:8080/";

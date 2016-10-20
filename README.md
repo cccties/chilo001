@@ -14,7 +14,7 @@ CHiLO Producerの利用方法については、こちらをご覧ください（
 
 ### Copyright
 
-Copyright © 2015-2016 NPO CCC-TIES
+Copyright © 2015 NPO CCC-TIES
 
 ***
 
@@ -32,4 +32,4 @@ CHiLO Producerの利用方法については、こちらをご覧ください（
 
 ### Copyright
 
-Copyright © 2015-2016 NPO CCC-TIES
+Copyright © 2015 NPO CCC-TIES

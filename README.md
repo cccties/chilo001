@@ -2,7 +2,7 @@ English version is [HERE](#english).
 
 # 「はじめての情報ネットワーク」素材サンプル
 
-この素材サンプルは、CHiLO Book Libraryで公開している[「はじめての情報ネットワーク」](http://chilos.jp/s/?id=1)の素材となっております。
+この素材サンプルは、CHiLO Book Libraryで公開している「[はじめての情報ネットワーク](http://chilos.jp/s/?id=1)」の素材となっております。
 
 ダウンロードして展開したファイルを、CHiLO Producerの _(root)/chiloPro/_ にコピーして、CHiLO Book制作の参考にしてください。
 
@@ -20,7 +20,7 @@ Copyright © 2015 NPO CCC-TIES
 
 # <a name="english"> "Introduction to Information Network" resource sample 
 
-These resource samples are the resources used in "Introduction to Information Network"(http://chilos.jp/s/?id=1) accessible at CHiLO Book Library.
+These resource samples are the resources used in "[Introduction to Information Network](http://chilos.jp/s/?id=1)" accessible at CHiLO Book Library.
 
 Download and expand the file and copy the expanded file to _(root)/chiloPro/_ of CHiLO Producer for reference in creating CHiLO Books.
 

@@ -24,7 +24,7 @@ These resource samples are the resources used in "Introduction to Informataion N
 
 Download and expand the file and copy the expanded file to _(root)/chiloPro/_ of CHiLO Producer for reference in creating CHiLO Books.
 
-For usage of CHiLO Producer, see (https://github.com/cccties/chilo-producer).
+For the use of CHiLO Producer, see (https://github.com/cccties/chilo-producer).
 
 ### Licencing
 

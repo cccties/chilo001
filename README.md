@@ -18,13 +18,13 @@ Copyright © 2015 NPO CCC-TIES
 
 ***
 
-# <a name="english"> 「はじめての情報ネットワーク」素材サンプル
+# <a name="english"> "Introduction to Information Network" resource sample 
 
-この素材サンプルは、CHiLO Book Libraryで公開している[「はじめての情報ネットワーク」](http://chilos.jp/s/?id=1)の素材となっております。
+These resource samples are the resources used in "Introduction to Informataion Network"(http://chilos.jp/s/?id=1) accessible at CHiLO Book Library.
 
-ダウンロードして展開したファイルを、CHiLO Producerの _(root)/chiloPro/_ にコピーして、CHiLO Book制作の参考にしてください。
+Download and expand the file and copy the expanded file to _(root)/chiloPro/_ of CHiLO Producer for reference in creating CHiLO Books.
 
-CHiLO Producerの利用方法については、こちらをご覧ください（ https://github.com/cccties/chilo-producer ）。
+For usage of CHiLO Producer, see (https://github.com/cccties/chilo-producer).
 
 ### Licencing
 
